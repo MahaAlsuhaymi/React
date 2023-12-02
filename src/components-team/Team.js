@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import TeamMember from './TeamMember';;
-import memberInfo from './memberInfo'
+import memberInfo from './memberInfo';
+import TeamMember from './TeamMember';
 
 class Team extends Component{
 
