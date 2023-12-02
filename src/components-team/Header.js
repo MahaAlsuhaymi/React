@@ -1,6 +1,14 @@
 import React from 'react';
 
 function Header(){
+
+    return(
+        <div className="navbar bg-dark rounded text-white">
+            <h2>Our Team</h2>
+        </div>
+        );
+
+   /*
     const client = "Designer";
     const title = {
         designer: "Design ",
@@ -21,6 +29,7 @@ function Header(){
             </h2>
         </div>
     );
+    */
 }
 
 export default Header;
