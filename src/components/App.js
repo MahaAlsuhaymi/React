@@ -9,7 +9,7 @@ class App extends Component{
     }
 
     eventHandler(){
-
+        this.state.number = 1
     }
 
     render(){
