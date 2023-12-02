@@ -1,9 +1,8 @@
-
 import React, { Component } from 'react';
-import memberInfo from './memberInfo';
 import TeamMember from './TeamMember';
+import memberInfo from './memberInfo';
 
-class Team extends Component{
+class Team_click extends Component{
 
     constructor(){
         super()
@@ -13,7 +12,7 @@ class Team extends Component{
             counter: 0,
          }
 
-         this.clickEvent = this.clickEvent.bind(this);
+        this.clickEvent = this.clickEvent.bind(this);
     }
 
     clickEvent(){
@@ -39,10 +38,14 @@ class Team extends Component{
     render(){        
         return(
             <div className="row">
-                <button className="btn btn-primary btn-lg btn-block" onClick={this.clickHandler}>Click me!</button>
+                <div className="col-md-12">
+                    <button className="btn btn-primary btn-lg btn-block" 
+                    onClick={this.clickHandler}>Click me!</button>
+                </div>
+                {this.newMembers}
             </div>
-        );
+        )
     }
 }
 
-export default Team
+export default Team_click
