@@ -6,17 +6,21 @@ class App extends Component{
         this.state = {
             number: 0
         }
+
+        this.clickHandler = this.clickHandler.bind(this);
     }
 
-    eventHandler(){
-        this.state.number = 1
+    clickHandler(){
+        this.setState({
+            number : 1
+        })
     }
 
     render(){
         return(
             <div>
                 <h1>{this.state.number}</h1>
-                <button onClick={this.eventHandler}>Click me!</button>
+                <button onClick={this.clickHandler}>Click me!</button>
             </div>
         )
     }
