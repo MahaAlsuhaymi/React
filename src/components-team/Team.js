@@ -10,6 +10,10 @@ class Team extends Component{
         this.state = { memberInfo : memberInfo }
     }
 
+    clickEvent(){
+        
+    }
+
     mapping(x){
        const members = x.map( member => <TeamMember 
                         key={member.id}
@@ -26,6 +30,7 @@ class Team extends Component{
     render(){        
         return(
             <div className="row">
+                <button className="btn btn-primary btn-lg btn-block" onClick={this.clickEvent}>Click me!</button>
                 {this.mapping(this.state.memberInfo)}
             </div>
         );

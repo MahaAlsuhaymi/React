@@ -1,7 +1,7 @@
 import Header from './Header';
 //import Text from './Text';
 //import Social from './Social';
-import Team from './Team';
+import Team from './Team_click';
 import React, { Component } from 'react';
 
 class App extends Component{
