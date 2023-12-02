@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-function Header(){
-
-    return(
-        <div className="navbar bg-dark rounded text-white">
-            <h2>Our Team</h2>
-        </div>
-        );
+class Header extends Component{
+    render(){
+        return(
+            <div className="navbar bg-dark rounded text-white">
+                <h2>Our Team</h2>
+            </div>
+        )
+    }
 
    /*
     const client = "Designer";

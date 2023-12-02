@@ -4,14 +4,16 @@ import Header from './Header';
 import Team from './Team';
 import React, { Component } from 'react';
 
-function App(){
-    return (
-      <div className="container">
-        <Header />
-        <Team />
-      </div>
-    );
-  }
+class App extends Component{
+    render(){
+        return (
+          <div className="container">
+            <Header />
+            <Team />
+          </div>
+        );
+    }
+}
 
 
 export default App;
