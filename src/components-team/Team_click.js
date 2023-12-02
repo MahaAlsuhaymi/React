@@ -40,7 +40,7 @@ class Team_click extends Component{
             <div className="row">
                 <div className="col-md-12">
                     <button className="btn btn-primary btn-lg btn-block" 
-                    onClick={this.clickHandler}>Click me!</button>
+                    onClick={this.clickEvent}>Click to view!</button>
                 </div>
                 {this.newMembers}
             </div>
