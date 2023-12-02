@@ -11,8 +11,10 @@ class App extends Component{
     }
 
     clickHandler(){
-        this.setState({
-            number : 1
+        this.setState(function(prevState){
+            return{
+                number: prevState.number +1
+            }
         })
     }
 
