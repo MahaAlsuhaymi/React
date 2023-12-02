@@ -9,3 +9,7 @@ div {
 label {
     padding-left: 10px;
 }
+
+input[type='checkbox']{
+    margin-left: 10px;
+}
